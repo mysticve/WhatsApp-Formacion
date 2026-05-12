@@ -3,144 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directorio de Canales de WhatsApp de Formación | AprenderGratis</title>
+    <title>Canales de WhatsApp de Formación | AprenderGratis</title>
     <style>
-      .ag-channels {
-        margin: 18px 0;
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      }
-      .ag-channels__wrap{
-        border: 1px solid rgba(0,0,0,.08);
-        border-radius: 14px;
-        overflow: hidden;
-        box-shadow: 0 6px 18px rgba(0,0,0,.06);
-        background: #fff;
-      }
-      .ag-channels__header{
-        padding: 14px 16px;
-        background: linear-gradient(90deg, rgba(0,136,204,.10), rgba(255,153,0,.10));
-        border-bottom: 1px solid rgba(0,0,0,.06);
-      }
-      .ag-channels__title{
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.3;
-        font-weight: 700;
-        color: #111;
-      }
-      .ag-channels__subtitle{
-        margin: 6px 0 0 0;
-        font-size: 13px;
-        color: rgba(0,0,0,.65);
-      }
-      .ag-channels__scroll{
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-      }
-      table.ag-channels__table{
-        width: 100%;
-        border-collapse: collapse;
-        min-width: 640px;
-      }
-      .ag-channels__table th,
-      .ag-channels__table td{
-        padding: 12px 14px;
-        border-bottom: 1px solid rgba(0,0,0,.06);
-        vertical-align: middle;
-      }
-      .ag-channels__table th{
-        text-align: left;
-        font-size: 13px;
-        letter-spacing: .02em;
-        color: rgba(0,0,0,.70);
-        background: rgba(0,0,0,.02);
-        white-space: nowrap;
-      }
-      .ag-channels__table tr:hover td{
-        background: rgba(0,136,204,.05);
-      }
-      .ag-channels__name{
-        font-weight: 700;
-        color: #111;
-        font-size: 14px;
-      }
-      .ag-channels__tag{
-        display: inline-block;
-        padding: 6px 10px;
-        font-size: 12px;
-        border-radius: 999px;
-        border: 1px solid rgba(0,0,0,.10);
-        background: rgba(0,0,0,.02);
-        color: rgba(0,0,0,.75);
-        white-space: nowrap;
-      }
-      .ag-channels__btn{
-        display: inline-flex;
-        align-items: center;
-        gap: 8px;
-        padding: 9px 12px;
-        border-radius: 10px;
-        font-weight: 700;
-        font-size: 13px;
-        text-decoration: none !important;
-        border: 1px solid rgba(0,136,204,.30);
-        background: rgba(0,136,204,.10);
-        color: #075a73;
-        transition: transform .12s ease, background .12s ease, border-color .12s ease;
-        white-space: nowrap;
-      }
-      .ag-channels__btn:hover{
-        background: rgba(0,136,204,.16);
-        border-color: rgba(0,136,204,.45);
-        transform: translateY(-1px);
-      }
-      .ag-channels__btn svg{
-        width: 16px; height: 16px;
-      }
-
-      /* Nueva sección de sugerencias */
-      .ag-suggestions {
-        margin-top: 40px;
-        padding: 20px;
-        background: #f9f9f9;
-        border-radius: 14px;
-        border: 1px dashed #ccc;
-        text-align: center;
-      }
-      .ag-suggestions a {
-        color: #0366d6;
-        font-weight: bold;
-        text-decoration: none;
-      }
-
+      .ag-channels { margin: 18px 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+      .ag-channels__wrap{ border: 1px solid rgba(0,0,0,.08); border-radius: 14px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,.06); background: #fff; }
+      .ag-channels__header{ padding: 14px 16px; background: linear-gradient(90deg, rgba(0,136,204,.10), rgba(255,153,0,.10)); border-bottom: 1px solid rgba(0,0,0,.06); }
+      .ag-channels__title{ margin: 0; font-size: 16px; line-height: 1.3; font-weight: 700; color: #111; }
+      .ag-channels__subtitle{ margin: 6px 0 0 0; font-size: 13px; color: rgba(0,0,0,.65); }
+      .ag-channels__scroll{ overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      table.ag-channels__table{ width: 100%; border-collapse: collapse; min-width: 640px; }
+      .ag-channels__table th, .ag-channels__table td{ padding: 12px 14px; border-bottom: 1px solid rgba(0,0,0,.06); vertical-align: middle; }
+      .ag-channels__table th{ text-align: left; font-size: 13px; color: rgba(0,0,0,.70); background: rgba(0,0,0,.02); white-space: nowrap; }
+      .ag-channels__table tr:hover td{ background: rgba(0,136,204,.05); }
+      .ag-channels__name{ font-weight: 700; color: #111; font-size: 14px; }
+      .ag-channels__tag{ display: inline-block; padding: 6px 10px; font-size: 12px; border-radius: 999px; border: 1px solid rgba(0,0,0,.10); background: rgba(0,0,0,.02); color: rgba(0,0,0,.75); white-space: nowrap; }
+      .ag-channels__btn{ display: inline-flex; align-items: center; gap: 8px; padding: 9px 12px; border-radius: 10px; font-weight: 700; font-size: 13px; text-decoration: none !important; border: 1px solid rgba(0,136,204,.30); background: rgba(0,136,204,.10); color: #075a73; transition: 0.2s; white-space: nowrap; }
+      .ag-channels__btn:hover{ background: rgba(0,136,204,.16); transform: translateY(-1px); }
+      .ag-channels__btn svg{ width: 16px; height: 16px; flex: 0 0 16px; }
+      
       @media (max-width: 720px){
         table.ag-channels__table{ min-width: 0; }
         .ag-channels__table thead{ display: none; }
         .ag-channels__table, .ag-channels__table tbody, .ag-channels__table tr, .ag-channels__table td{ display: block; width: 100%; }
-        .ag-channels__table tr{ border-bottom: 1px solid rgba(0,0,0,.06); padding: 10px 12px; }
-        .ag-channels__table td{ border: 0; padding: 8px 0; }
-        .ag-channels__table td[data-label]::before{
-          content: attr(data-label);
-          display: block;
-          font-size: 12px;
-          color: rgba(0,0,0,.55);
-          margin-bottom: 4px;
-        }
-        .ag-channels__btn{ width: 100%; justify-content: center; }
+        .ag-channels__table tr{ border-bottom: 1px solid rgba(0,0,0,.06); padding: 15px; }
+        .ag-channels__table td{ border: 0; padding: 5px 0; }
+        .ag-channels__table td[data-label]::before{ content: attr(data-label); display: block; font-size: 11px; color: #888; }
       }
+      .btn-back { display: inline-block; margin-top: 20px; color: #0088cc; text-decoration: none; font-size: 14px; }
     </style>
 </head>
-<body>
+<body style="max-width: 900px; margin: 0 auto; padding: 20px; background: #f9f9f9;">
 
 <section class="ag-channels">
   <div class="ag-channels__wrap">
     <div class="ag-channels__header">
-      <p class="ag-channels__title">Canales de WhatsApp de formación</p>
-      <p class="ag-channels__subtitle">Recopilatorio actualizado por <a href="https://aprendergratis.es" style="color:#0366d6; text-decoration:none;">AprenderGratis.es</a>. Pulsa en “Ir a canal” para seguirlos.</p>
+      <h1 class="ag-channels__title">Directorio de Canales de WhatsApp de Formación</h1>
+      <p class="ag-channels__subtitle">Selección de los mejores canales para aprender gratis. Pulsa en “Ir a canal” para unirte.</p>
     </div>
 
     <div class="ag-channels__scroll">
-      <table class="ag-channels__table" role="table">
+      <table class="ag-channels__table">
         <thead>
           <tr>
             <th>Canal</th>
@@ -152,39 +54,59 @@
           <tr>
             <td data-label="Canal"><span class="ag-channels__name">Aprender Gratis</span></td>
             <td data-label="Temática"><span class="ag-channels__tag">Cursos y recursos</span></td>
-            <td data-label="Acceso">
-              <a class="ag-channels__btn" href="https://www.whatsapp.com/channel/0029Vb7rZpZLikg8zBaZqt3c" target="_blank">
-                Ir a canal
-              </a>
-            </td>
+            <td><a class="ag-channels__btn" href="https://www.whatsapp.com/channel/0029Vb7rZpZLikg8zBaZqt3c" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
+          </tr>
+          <tr>
+            <td data-label="Canal"><span class="ag-channels__name">Universitarios y Preuniversitarios</span></td>
+            <td data-label="Temática"><span class="ag-channels__tag">Estudios y apoyo</span></td>
+            <td><a class="ag-channels__btn" href="https://whatsapp.com/channel/0029Vam187t3LdQcAkXgfu3O" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
+          </tr>
+          <tr>
+            <td data-label="Canal"><span class="ag-channels__name">Profe Leonardo</span></td>
+            <td data-label="Temática"><span class="ag-channels__tag">Educación general</span></td>
+            <td><a class="ag-channels__btn" href="https://whatsapp.com/channel/0029VaD1ZOI4Crff0LX2FU44" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
+          </tr>
+          <tr>
+            <td data-label="Canal"><span class="ag-channels__name">Aprende Astrología</span></td>
+            <td data-label="Temática"><span class="ag-channels__tag">Astrología</span></td>
+            <td><a class="ag-channels__btn" href="https://whatsapp.com/channel/0029VaJ27OM7IUYOwwdG7c3s" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
+          </tr>
+          <tr>
+            <td data-label="Canal"><span class="ag-channels__name">Primer Grado material educativo</span></td>
+            <td data-label="Temática"><span class="ag-channels__tag">Primaria</span></td>
+            <td><a class="ag-channels__btn" href="https://whatsapp.com/channel/0029VaGyzalJ93waTpJR3S3e" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
+          </tr>
+          <tr>
+            <td data-label="Canal"><span class="ag-channels__name">Aprende inglés en Whatsapp</span></td>
+            <td data-label="Temática"><span class="ag-channels__tag">Idiomas</span></td>
+            <td><a class="ag-channels__btn" href="https://whatsapp.com/channel/0029Va87xB5AYlUS6c7EQf3e" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
+          </tr>
+          <tr>
+            <td data-label="Canal"><span class="ag-channels__name">Aprende alemán en Whatsapp</span></td>
+            <td data-label="Temática"><span class="ag-channels__tag">Idiomas</span></td>
+            <td><a class="ag-channels__btn" href="https://whatsapp.com/channel/0029VaejrEDHQbRvolOd1O1l" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
+          </tr>
+          <tr>
+            <td data-label="Canal"><span class="ag-channels__name">BBVA aprendamos juntos</span></td>
+            <td data-label="Temática"><span class="ag-channels__tag">Educación y valores</span></td>
+            <td><a class="ag-channels__btn" href="https://whatsapp.com/channel/0029Vak5SUf2UPBCk4aWyB0i" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
           </tr>
           <tr>
             <td data-label="Canal"><span class="ag-channels__name">Trabajar por el Mundo</span></td>
             <td data-label="Temática"><span class="ag-channels__tag">Empleo y Formación</span></td>
-            <td data-label="Acceso">
-              <a class="ag-channels__btn" href="https://whatsapp.com/channel/0029Vb6HEaBCnA7qcTkaLO3w" target="_blank">
-                Ir a canal
-              </a>
-            </td>
+            <td><a class="ag-channels__btn" href="https://whatsapp.com/channel/0029Vb6HEaBCnA7qcTkaLO3w" target="_blank" rel="nofollow noopener">Ir a canal</a></td>
+          </tr>
+          <tr>
+            <td data-label="Canal"><span class="ag-channels__name">Cursos con Certificado</span></td>
+            <td data-label="Temática"><span class="ag-channels__tag">Certificaciones</span></td>
+            <td><a class="ag-channels__btn" href="https://aprendergratis.es" target="_blank">Ver más</a></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
+  <a href="index.html" class="btn-back">← Volver al inicio</a>
 </section>
-
-<section class="ag-suggestions">
-    <h3>📢 ¿Conoces más canales de formación?</h3>
-    <p>Ayúdanos a mantener este listado actualizado. Si conoces un canal en español que aporte valor educativo, ¡cuéntanoslo!</p>
-    <p>Puedes sugerirlo abriendo una <strong>"Issue"</strong> en nuestro repositorio o enviándonos un mensaje.</p>
-    <a href="https://github.com/mysticve/WhatsApp-Formacion/issues" target="_blank" class="ag-channels__btn" style="background:#333; color:white; border:none;">
-        ➕ Sugerir nuevo canal
-    </a>
-</section>
-
-<p style="text-align:center; margin-top:30px;">
-    <a href="index.html" style="color: #666; text-decoration:none;">← Volver al inicio</a>
-</p>
 
 </body>
 </html>
